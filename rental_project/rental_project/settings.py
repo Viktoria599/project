@@ -56,19 +56,19 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'rental_project.wsgi.application'
 
-DATABASES = {  
-    'default': {  
-        'ENGINE': 'django.db.backends.postgresql',  
-        'NAME': 'your_db_name',  
-        'USER': 'your_user',  
-        'PASSWORD': 'your_password',  
-        'HOST': 'your_host',  
-        'PORT': '5432',  
-        'OPTIONS': {  
-            'sslmode': 'require',  
-        },  
-    }  
-}  
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'default_db',
+        'USER': 'gen_user',
+        'PASSWORD': '123456789r', 
+        'HOST': '8180eb71305c97dedf8ed8c0.twc1.net',
+        'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'disable',  # отключаем SSL (проще всего)
+        },
+    }
+}
 
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
